@@ -2,9 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 
 //depend on OS
-void communicating_processes() {
-  //Windows specific
-  Process.start('C:\\Windows\\System32\\cmd.exe', []).then((Process process) {
+void communicating_processes() => Process.start('C:\\Windows\\System32\\cmd.exe', []).then((Process process) {
     //Listen for output from the process
     process.stdout.transform(utf8.decoder).listen((data) {
       print(data);
@@ -17,7 +15,7 @@ void communicating_processes() {
 
     //get the exit code from the process
     process.exitCode.then((int code) {
-      print('Exit code: ${code}');
+      print('Exit code: $code');
       //exit
       exit(0);
     });
@@ -28,7 +26,6 @@ void communicating_processes() {
     //Don't do this you are killing the process before it can respond
     //Process.killPid(process.pid);
   });
-}
 
 void listOfDir() {
   //List of all files in a directory

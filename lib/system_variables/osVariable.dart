@@ -10,7 +10,7 @@ main() {
   }
 
   var path = Platform.script.path;
-  print('current file Path: ${path}');
+  print('current file Path: $path');
   print('dart: ${Platform.executable}');
 
   print("Env");

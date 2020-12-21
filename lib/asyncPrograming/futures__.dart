@@ -7,7 +7,7 @@ main(List<String> args) {
 
   File file = File(path);
 
-  Future<RandomAccessFile> f = file.open(mode: FileMode.APPEND);
+  Future<RandomAccessFile> f = file.open(mode: FileMode.append);
   f.then((value) {
     print("File has been openned");
     value
