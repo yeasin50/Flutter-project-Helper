@@ -13,7 +13,7 @@
 !lib/
 !pubspec.yaml
 !.gitignore
-!README.
+!README.md
 !/test
 # IntelliJ related
 *.iml
