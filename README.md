@@ -1,6 +1,6 @@
 # DartAdvanced
 Im using [vs code](https://code.visualstudio.com/) and [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) extentsion
-## create a flutter project, you will use flutter packages
+## create a flutter project, we will use flutter packages
 ### everyThing will be inside lib directory for simplicity [.gitignore](https://github.com/yeasin50/Dart_Advanced/blob/master/.gitignore) 
 comment test/widget_test.dart line:16
 await tester.pumpWidget(MyApp()); 
