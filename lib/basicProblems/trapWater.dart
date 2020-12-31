@@ -30,6 +30,6 @@ int findRightMax(arr, n, i) {
 }
 
 main(List<String> args) {
-  var arr = [2,3,4,5];
-  print(findTotalWater(arr, arr.length));
+  var arr = [4,2,0,3,2,5];
+  print(findTotalWater(arr, arr.length)); //9
 }
