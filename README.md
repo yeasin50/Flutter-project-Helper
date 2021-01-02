@@ -1,12 +1,31 @@
 # DartAdvanced
-Im using [vs code](https://code.visualstudio.com/) and [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) extentsion
-## create a flutter project, we will use flutter packages
-### everyThing will be inside lib directory for simplicity [.gitignore](https://github.com/yeasin50/Dart_Advanced/blob/master/.gitignore) 
-comment test/widget_test.dart line:16
+I'm using [vs code](https://code.visualstudio.com/) and [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) extentsion
+## Create a flutter project, we will use flutter packages
+### everyThing will be inside lib directory for simplicity. For more check [.gitignore](https://github.com/yeasin50/Dart_Advanced/blob/master/.gitignore) 
+</br>
+comment widget_test.dart(inside test folder)  line:16 for textCode.
+
+```
 await tester.pumpWidget(MyApp()); 
+```
 
+but to Test packages run in flutter way(like app build and run). 
+
+### ⚠ Follow the pubspec.yaml for packages 
+------
+## While working with manifest, uninstall the app and rebuild again. 
+-----
+## Permission Handler 
+add on AndroidManifest.xml file also check out for info.plist  
+```
+  <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+```
 ## Getting Started
-
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)

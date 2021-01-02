@@ -33,7 +33,7 @@ for j in range(d):
 
 print(arr)
 
-# 3rd approch 
+# 3rd approch  
 def reverseArray(arr, start, end):
     while(start< end):
         temp = arr[start]
