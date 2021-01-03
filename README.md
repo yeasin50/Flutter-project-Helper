@@ -25,6 +25,20 @@ add on AndroidManifest.xml file also check out for info.plist
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
 ```
+
+## For Contact Services
+```
+<uses-permission android:name="android.permission.READ_CONTACTS" />  
+<uses-permission android:name="android.permission.WRITE_CONTACTS" />  
+```
+-  info.plist 
+  ```
+  <key>NSContactsUsageDescription</key>  
+  <string>This app requires contacts access to function properly.</string>  
+  ```
+[Visit package Doc](https://pub.dev/packages/contacts_service)
+
+----
 ## Getting Started
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)

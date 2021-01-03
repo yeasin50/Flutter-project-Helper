@@ -128,4 +128,5 @@ class _PermissionHandlerState extends State<PermissionHandler> {
       ),
     );
   }
+
 }

@@ -1,4 +1,5 @@
 import 'package:dartAdvanced/flutter/map/flutter_map.dart';
+import 'package:dartAdvanced/flutter/phone_integration/contact_service.dart';
 import 'package:dartAdvanced/flutter/phone_integration/permission_handler.dart';
 import 'package:dartAdvanced/flutter/phone_integration/url_launcher_.dart';
 import 'package:flutter/material.dart';
@@ -27,7 +28,8 @@ class _MyAppState extends State<MyApp> {
       // body: AnimWidget(),
       // body: OpenStreet(),
       // body: UrlLuncher(),
-      body: PermissionHandler(),
+      // body: PermissionHandler(),
+      body: ContactService(),
     ));
   }
 }
