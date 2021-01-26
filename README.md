@@ -39,6 +39,10 @@ add on AndroidManifest.xml file also check out for info.plist
 [Visit package Doc](https://pub.dev/packages/contacts_service)
 
 ----
+
+## Rive 
+
+[Animation controler](https://blog.rive.app/rives-flutter-runtime-part-1/)
 ## Getting Started
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)

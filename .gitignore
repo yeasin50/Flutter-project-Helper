@@ -15,6 +15,9 @@
 !.gitignore
 !README.md
 !/test
+!/assets/
+
+
 # IntelliJ related
 *.iml
 *.ipr

@@ -1,4 +1,5 @@
 import 'package:camera/camera.dart';
+import 'package:dartAdvanced/flutter/animation/riveTest.dart';
 import 'package:dartAdvanced/flutter/map/flutter_map.dart';
 import 'package:dartAdvanced/flutter/phone_integration/camera/camera_widget.dart';
 import 'package:dartAdvanced/flutter/phone_integration/contact_service.dart';
@@ -38,7 +39,8 @@ class _MyAppState extends State<MyApp> {
       // body: UrlLuncher(),
       // body: PermissionHandler(),
       // body: ContactService(),
-      body: CameraApp(),
+      // body: CameraApp(),
+      body: RiveTest(),
     ));
   }
 }
