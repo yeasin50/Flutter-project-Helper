@@ -43,6 +43,10 @@ add on AndroidManifest.xml file also check out for info.plist
 ## Rive 
 
 [Animation controler](https://blog.rive.app/rives-flutter-runtime-part-1/)
+
+
+## Assets Audio player
+[playing sound from assets](https://pub.dev/packages/assets_audio_player)
 ## Getting Started
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
