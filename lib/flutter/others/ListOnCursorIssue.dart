@@ -33,19 +33,6 @@ class _MyHomePageState extends State<MyHomePage> {
   final _formKey = GlobalKey<FormState>();
   final _textField = GlobalKey();
 
-  //Controller
-  var edit_code;
-  var edit_prezzo;
-
-  @override
-  void initState() {
-    super.initState();
-    edit_code = new TextEditingController();
-    edit_prezzo = new TextEditingController();
-    edit_code.text = "cAAAAAAt";
-    edit_prezzo.text = "date";
-  }
-
   var valid = -1;
 
   save() {
@@ -64,6 +51,16 @@ class _MyHomePageState extends State<MyHomePage> {
         child: ListView.builder(
           itemBuilder: (ct, index) {
             final nome_piatto = "p";
+            var edit_code = new TextEditingController();
+            var edit_prezzo = new TextEditingController();
+
+            edit_code.text = "cAAAAAAt";
+            edit_prezzo.text = "date";
+
+            edit_code.selection = TextSelection.fromPosition(
+                TextPosition(offset: edit_code.text.length));
+            edit_prezzo.selection = TextSelection.fromPosition(
+                TextPosition(offset: edit_prezzo.text.length));
 
             return ExpansionTile(
               title: Text("title"),
