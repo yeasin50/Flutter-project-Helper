@@ -9,6 +9,11 @@ comment widget_test.dart(inside test folder)  line:16 for textCode.
 await tester.pumpWidget(MyApp()); 
 ```
 
+### RiverPod `flutter_riverpod: ^0.14.0+3`
+- [StateNotifierProvider](https://github.com/yeasin50/Dart_-Flutter_Advanced/blob/master/lib/riverPod/stateNotifierProvider.dart)
+
+
+
 but to Test packages run in flutter way(like app build and run). 
 
 ### ⚠ Follow the pubspec.yaml for packages 
