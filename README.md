@@ -1,5 +1,5 @@
 # DartAdvanced
-I'm using [vs code](https://code.visualstudio.com/) and [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) extentsion
+I'm using [vs code](https://code.visualstudio.com/) 
 ## Create a flutter project, we will use flutter packages
 ### everyThing will be inside lib directory for simplicity. For more check [.gitignore](https://github.com/yeasin50/Dart_Advanced/blob/master/.gitignore) 
 </br>
