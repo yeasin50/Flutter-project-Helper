@@ -43,7 +43,8 @@ class AppRouterDelegate extends RouterDelegate<AppRoutePath>
 
   int? _selectedItem;
   bool show404 = false;
-
+  
+  @override
   AppRoutePath get currentConfiguration {
     if (show404) {
       return AppRoutePath.unknown();
@@ -63,6 +64,7 @@ class AppRouterDelegate extends RouterDelegate<AppRoutePath>
   @override
   Widget build(BuildContext context) {
     return Navigator(
+      key:navigatorKey,
       pages: [
         MaterialPage(
           child: HomeScreen(
