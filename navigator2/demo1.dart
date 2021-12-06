@@ -1,6 +1,6 @@
 // https://gist.github.com/yeasin50/234d8e3b06d9356e3484023f7db2872f
 
-
+import 'package:flutter/material.dart';
 
 main() {
   // final appDocumentDir = await path_provider.getApplicationDocumentsDirectory();
@@ -43,7 +43,7 @@ class AppRouterDelegate extends RouterDelegate<AppRoutePath>
 
   int? _selectedItem;
   bool show404 = false;
-  
+
   @override
   AppRoutePath get currentConfiguration {
     if (show404) {
@@ -64,28 +64,41 @@ class AppRouterDelegate extends RouterDelegate<AppRoutePath>
   @override
   Widget build(BuildContext context) {
     return Navigator(
-      key:navigatorKey,
+      key: navigatorKey,
       pages: [
         MaterialPage(
-          child: HomeScreen(
-            onTap: _handleSelection,
+          child: Scaffold(
+            body: ListView.builder(
+              itemCount: maxItem,
+              itemBuilder: (context, index) {
+                return ElevatedButton(
+                    onPressed: () => _handleSelection(index),
+                    child: Text("item $index"));
+              },
+            ),
           ),
         ),
         if (show404)
           MaterialPage(
-            child: ErrorScreen(),
-          ),
+              child: Scaffold(
+            body: Center(
+              child: Text('404'),
+            ),
+          )),
         if (_selectedItem != null)
           _selectedItem! > maxItem || _selectedItem! < 0
               ? MaterialPage(
-                  child: UnknownScreen(),
-                )
-              : MaterialPage(
-                  key: ValueKey('details'),
-                  child: DetailsScreen(
-                    index: _selectedItem!,
+                  child: Scaffold(
+                  body: Center(
+                    child: Text('Unkwon'),
                   ),
-                )
+                ))
+              : MaterialPage(
+                  child: Scaffold(
+                  body: Center(
+                    child: Text('details $_selectedItem'),
+                  ),
+                )),
       ],
       onPopPage: (route, result) {
         if (!route.didPop(result)) {
@@ -185,3 +198,4 @@ class _MyAppState extends State<MyApp> {
     );
   }
 }
+
