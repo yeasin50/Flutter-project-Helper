@@ -4,22 +4,22 @@ class User {
   String name;
   int age;
 
-  User({this.name, this.age});
+  User({required this.name, required this.age});
 
   factory User.fromJson(Map<String, dynamic> json) {
     return User(
-      name: json['name'] as String,
-      age: json['age'] as int,
+      name: json['name'] ?? "",
+      age: json['age'] ?? 0,
     );
   }
 
   @override
   String toString() {
-    return '{ ${this.name}, ${this.age} }';
+    return '{ $name, $age}';
   }
 }
 
-////`Json data with simple key and value`
+///`Json data with simple key and value`
 void demo1() {
   print("Demo 1");
   String jsonString = '{"name":"Nimai", "age":43}';
@@ -29,7 +29,7 @@ void demo1() {
   print("Age: ${user.age}");
 }
 
-////`Json data with key and value as List`
+///`Json data with key and value as List`
 void demo2() {
   print("\n\ndemo 2");
   var js1 = '[{"name": "bezkoder", "age": 34}, {"name": "Aer", "age": 323}]';
@@ -43,7 +43,7 @@ void demo2() {
   });
 }
 
-////`Json data with key and value as List inside Tag`
+///`Json data with key and value as List inside Tag`
 void demo3() {
   print("\n\ndemo 3");
   var js2 =
