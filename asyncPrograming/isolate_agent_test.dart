@@ -37,7 +37,7 @@ class _BodyWidgetState extends State<BodyWidget> {
     Agent<int> agent = await _agent;
 
     agent.update((p0) => computationallyExpensiveTask());
-    return agent.read();
+    return await agent.read();
   }
 
   @override
