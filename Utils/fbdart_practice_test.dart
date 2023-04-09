@@ -149,8 +149,8 @@ void main() {
       ).map((r) => r * 10);
     }
 
-    test("d", () {
-      asyncI();
+    test("should return left", () {
+      expect(asyncF().run(), completion(left('Some error')));
     });
   });
 }
