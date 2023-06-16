@@ -35,3 +35,7 @@ scripts:
   pub_get:
    run: melos exec -- flutter pub  get
    description:  get packages
+
+  build_runner:
+   run: melos exec -- dart  run build_runner build --delete-conflicting-outputs
+   description:  build runner to generate files
